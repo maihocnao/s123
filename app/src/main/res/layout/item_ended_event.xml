@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="10dp"
+    app:cardCornerRadius="8dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="160dp"
+        android:padding="10dp">
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:layout_width="135dp"
+            android:layout_height="135dp"
+            android:id="@+id/end_img_event"
+            android:src="@drawable/img_2"
+            android:layout_marginRight="10dp"
+            app:riv_corner_radius="10dip"
+            />
+
+        <TextView
+            android:id="@+id/end_event_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@id/end_img_event"
+            android:lines="2"
+            android:maxLines="2"
+            android:text="FPT Korean Festival  (F-Festival)"
+            android:fontFamily="@font/roboto_regular"
+            android:textFontWeight="500"
+            android:textColor="#EF566A"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/end_daystart_lay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:layout_toRightOf="@id/end_img_event"
+            android:layout_below="@id/end_event_name"
+            android:contentDescription="time"
+
+            >
+            <ImageView
+
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/end_time_icon"
+                android:src="@drawable/calendar1"
+
+                />
+
+            <TextView
+                android:id="@+id/end_text_day_start"
+
+                android:paddingLeft="3dp"
+                android:paddingTop="3dp"
+                android:paddingEnd="0dp"
+                android:textAlignment="center"
+                android:text="14/02/2023"
+                android:textFontWeight="600"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:fontFamily="@font/inter_medium"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/end_dayend_lay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:layout_toRightOf="@id/end_img_event"
+            android:layout_below="@id/end_daystart_lay"
+            android:contentDescription="location"
+
+            tools:ignore="NotSibling">
+            <ImageView
+
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/end_location_icon1"
+                android:src="@drawable/calendar1"
+                app:tint="#F78F1E"
+
+                />
+
+            <TextView
+                android:id="@+id/end_text_day_end"
+                android:paddingLeft="3dp"
+                android:paddingTop="3dp"
+                android:paddingEnd="0dp"
+                android:textAlignment="center"
+                android:text="20/02/2023"
+                android:fontFamily="@font/inter_medium"
+                android:textColor="@color/black"
+                android:textFontWeight="600"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/end_location_lay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:layout_toRightOf="@id/end_img_event"
+            android:layout_below="@id/end_dayend_lay"
+            android:contentDescription="time"
+
+            >
+            <ImageView
+
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/end_people_icon"
+                android:src="@drawable/location2"
+
+                />
+
+
+            <TextView
+                android:id="@+id/ended_location_text"
+                android:textAlignment="center"
+                android:paddingLeft="3dp"
+                android:paddingTop="3dp"
+                android:text="AL - 407"
+                android:textColor="@color/black"
+                android:fontFamily="@font/inter_medium"
+                android:textSize="16sp"
+                android:textFontWeight="600"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/current_people_lay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+
+            android:orientation="horizontal"
+            android:layout_toRightOf="@id/end_location_lay"
+            android:layout_below="@id/end_dayend_lay"
+            android:contentDescription="time"
+
+            >
+            <ImageView
+
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/ended_people_icon"
+                android:src="@drawable/people2"
+
+                />
+            <LinearLayout
+
+                android:paddingLeft="3dp"
+                android:paddingTop="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:gravity="bottom"
+                android:orientation="horizontal"
+                android:layout_toRightOf="@id/end_people_icon"
+                android:layout_below="@id/end_location_lay"
+                android:contentDescription="time"
+
+                >
+                <TextView
+                    android:id="@+id/ended_people_checked_text"
+
+                    android:paddingEnd="0dp"
+                    android:textAlignment="center"
+                    android:text="120"
+                    android:fontFamily="@font/inter_medium"
+                    android:textColor="#748394"
+                    android:textSize="16sp"
+                    android:textFontWeight="600"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"/>
+                <TextView
+                    android:id="@+id/ended_people_text"
+
+                    android:paddingEnd="0dp"
+                    android:textAlignment="center"
+                    android:text="/200"
+                    android:textFontWeight="600"
+                    android:fontFamily="@font/inter_medium"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="10dp"
+    app:cardCornerRadius="8dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="160dp"
+        android:padding="10dp">
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:layout_width="135dp"
+            android:layout_height="135dp"
+            android:id="@+id/icm_img_event"
+            android:src="@drawable/img_2"
+            android:layout_marginRight="10dp"
+            app:riv_corner_radius="10dip"
+            />
+
+        <TextView
+            android:id="@+id/icm_event_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@id/icm_img_event"
+            android:lines="2"
+            android:maxLines="2"
+            android:textFontWeight="500"
+            android:fontFamily="@font/roboto_regular"
+            android:text="FPT Korean Festival  (F-Festival)"
+
+            android:textColor="#627AF7"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/daystart_lay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:layout_toRightOf="@id/icm_img_event"
+            android:layout_below="@id/icm_event_name"
+            android:contentDescription="time"
+
+            >
+            <ImageView
+
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/icm_time_icon"
+                android:src="@drawable/calendar1"
+
+                />
+
+            <TextView
+                android:id="@+id/icm_text_day_start"
+                android:fontFamily="@font/inter_medium"
+                android:paddingLeft="3dp"
+                android:paddingTop="3dp"
+                android:paddingEnd="0dp"
+                android:textAlignment="center"
+                android:text="14/02/2023"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textFontWeight="600"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/icm_dayend_lay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:layout_toRightOf="@id/icm_img_event"
+            android:layout_below="@id/daystart_lay"
+            android:contentDescription="location"
+
+            tools:ignore="NotSibling">
+            <ImageView
+
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/icm_location_icon1"
+                android:src="@drawable/calendar1"
+                app:tint="#F78F1E"
+
+
+                />
+
+            <TextView
+                android:id="@+id/icm_day_end"
+                android:paddingLeft="3dp"
+                android:paddingTop="3dp"
+                android:paddingEnd="0dp"
+                android:fontFamily="@font/inter_medium"
+                android:textAlignment="center"
+                android:text="20/02/2023"
+                android:textFontWeight="600"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/icm_location_lay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:layout_toRightOf="@id/icm_img_event"
+            android:layout_below="@id/icm_dayend_lay"
+            android:contentDescription="time"
+
+            >
+            <ImageView
+
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/current_people_icon"
+                android:src="@drawable/location2"
+
+                />
+
+
+                <TextView
+                    android:id="@+id/icm_location_text"
+
+                    android:paddingLeft="3dp"
+                    android:paddingTop="3dp"
+                    android:textAlignment="center"
+                    android:text="AL - 407"
+                    android:fontFamily="@font/inter_medium"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textFontWeight="600"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/icm_people_lay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+
+            android:orientation="horizontal"
+            android:layout_toRightOf="@id/icm_location_lay"
+            android:layout_below="@id/icm_dayend_lay"
+            android:contentDescription="time"
+
+            >
+            <ImageView
+
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/ended_people_icon"
+                android:src="@drawable/people2"
+
+                />
+            <LinearLayout
+
+                android:paddingLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:gravity="bottom"
+                android:orientation="horizontal"
+                android:layout_toRightOf="@+id/icm_location_lay"
+                android:layout_below="@id/icm_location_lay"
+                android:contentDescription="time"
+
+                >
+
+                <TextView
+                    android:id="@+id/icm_amountpeople_text"
+
+                    android:paddingEnd="0dp"
+                    android:textAlignment="center"
+                    android:paddingLeft="3dp"
+                    android:paddingTop="3dp"
+                    android:text="200"
+                    android:fontFamily="@font/inter_medium"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textFontWeight="600"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
